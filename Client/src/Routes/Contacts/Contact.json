@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Facebook",
+        "img": "/Assets/Images/Contact/Socials/FBprofile.jpg",
+        "link": "https://www.facebook.com/profile.php?id=100018763508340",
+        "color":"blue"
+    },
+    {
+        "name": "Twitch",
+        "img": "/Assets/Images/Contact/Socials/TwitchProfile.png",
+        "link": "https://www.twitch.tv/paragonwings",
+        "color":"purple"
+    },
+    {
+        "name": "Youtube",
+        "img": "/Assets/Images/Contact/Socials/FBprofile.jpg",
+        "link": "https://www.youtube.com/@legendaryevil4490",
+        "color":"red"
+    }
+]

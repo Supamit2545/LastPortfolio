@@ -1,0 +1,207 @@
+.Register-Container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-image: url('/Assets/Images/Auth/Background.gif?raw=true');
+}
+
+.Register-Box {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: #303030;
+    border-radius: 20px;
+    z-index: 1;
+    animation: FadeDown 2s ease forwards;
+    overflow: hidden;
+
+    .Options {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 50px;
+        background: rgba(0, 255, 238, 0.041);
+        border-radius: 20px;
+
+        .BTH-Button {
+            width: 80%;
+            height: 70px;
+            margin: 0 auto;
+            border: 2px solid white;
+            box-shadow: -5px 2px 0px 2px orange;
+            border-radius: 15px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            transition: all 1s ease;
+            animation: moveRight 1s ease forwards;
+        }
+
+        .BTH-Button:hover {
+            background-color: rgb(251, 255, 0);
+            box-shadow: -5px 2px 0px 2px rgb(251, 255, 0);
+            border: 2px solid black;
+            color: black;
+        }
+
+
+        .BTL-Button {
+            width: 80%;
+            height: 70px;
+            border: 2px solid white;
+            box-shadow: -5px 2px 0px 2px skyblue;
+            border-radius: 15px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            transition: all 1s ease;
+            animation: moveRight 2s ease forwards;
+        }
+
+        .BTL-Button:hover {
+            background-color: skyblue;
+            box-shadow: -5px 2px 0px 2px blue;
+            border: 2px solid black;
+            color: black;
+        }
+    }
+
+    .Show-Register-form {
+        width: 100%;
+        z-index: 2;
+        justify-content: center;
+
+        .Register-form-input {
+            width: 80%;
+            height: 60px;
+            position: relative;
+            border: 2px solid skyblue;
+            background: transparent;
+            border-radius: 10px;
+            transition: all 1s ease;
+            z-index: 4;
+            color: white;
+            font-size: 24px;
+            font-family: monospace;
+            font-weight: bold;
+            padding-left: 15px;
+            outline: none;
+        }
+
+        .Register-form-text {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transition: all 1s ease;
+            font-weight: bold;
+            color: gray;
+            font-size: 24px;
+            z-index: 3;
+        }
+
+        .Register-form-input:focus {
+            border: 2px solid lime;
+        }
+
+        .Register-form-input:valid {
+            border: 2px solid lime;
+        }
+
+        .Register-form-input:focus +.Register-form-text,
+        .Register-form-input:valid +.Register-form-text {
+            height: 30px;
+            color: green;
+            transform: translate(-15px, -30px);
+            background: #303030;
+            padding: 0px 10px;
+            z-index: 5;
+            font-size: 20px;
+        }
+
+        .Register-form-input:-webkit-autofill,
+        .Register-form-input:-webkit-autofill:hover,
+        .Register-form-input:-webkit-autofill:focus,
+        .Register-form-input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px #303030 inset !important;
+            -webkit-text-fill-color: #00ff00 !important;
+            border: 2px solid green !important;
+        }
+        .Register-Submit-btn{
+            width: 50%;
+            height: 70px;
+            border: 2px solid skyblue;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 40px;
+            color: black;
+            transition: all 1s ease;
+            background: rgba(1, 156, 120, 0.981);
+            box-sizing: border-box;
+            box-shadow: 0px 5px 5px 2px skyblue;
+            animation: Fade 3s ease forwards;
+
+        }
+        .Register-Submit-btn:hover{
+            color: white;
+            background: rgb(0, 67, 0);
+            border: 2px solid lime;
+            box-shadow: 0px 5px 5px 2px lime;
+        }
+
+    }
+    .Password-Strong-Check{
+        width: 70%;
+    }
+}
+
+/* Animations */
+#input-psw{
+ animation: moveDown 1.5s ease forwards;
+}
+#input-psw-TEXT{
+ animation: moveDown 1.5s ease;
+}
+
+#input-conpsw{
+ animation: moveDown 2s ease forwards;
+}
+#input-conpsw-text{
+ animation: moveDown 2s ease;
+}
+
+
+@keyframes moveRight{
+    from{
+        transform: translateX(-150px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveDown{
+    from{
+        transform: translateY(-150px);
+    }to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes Fade{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes FadeDown{
+    from{
+        height: 0%;
+    }to{
+        height: 80%;
+    }
+}

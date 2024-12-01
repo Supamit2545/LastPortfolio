@@ -1,0 +1,16 @@
+.gotopbtn{
+    position: fixed;
+    background: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    bottom: 50PX;
+    right: 50px;
+    transition: all 1s ease;
+    z-index: 999;
+}
+.gotopbtn:hover{
+    background: gray;
+}

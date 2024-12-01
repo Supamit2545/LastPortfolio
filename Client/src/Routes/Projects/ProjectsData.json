@@ -1,0 +1,22 @@
+[
+    {
+        "name": "MyBlog",
+        "image": "/Assets/Images/Projects/Blog.png",
+        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+    },
+    {
+        "name": "Myshop",
+        "image": "/Assets/Images/Projects/MyShop.png",
+        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+    },
+    {
+        "name": "GameStrat",
+        "image": "/Assets/Images/Projects/Games_strat.png",
+        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+    },
+    {
+        "name": "Systems Repair",
+        "image": "/Assets/Images/Projects/Repair.png",
+        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+    }
+]

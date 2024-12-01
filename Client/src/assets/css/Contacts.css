@@ -1,0 +1,404 @@
+.Contact-Container{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    position: relative;
+    background: #000;
+}
+.Contact-Content{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    color: white;
+    
+    .Contact-Content-left{
+        display: flex;
+        width: 50%;
+        padding-left: 50px;
+        padding-top: 5%;
+        gap: 50px;
+        flex-direction: column;
+        .Contact-Btn{
+            border: 2px solid skyblue;
+            border-radius: 20px;
+            transition: all 1s ease;
+            width: 400px;
+            height: 100px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .Contact-Btn:hover{
+           background: blue;
+           transform: scale(1.1);
+        }
+        .Contact-Btn.active{
+           background: blue;
+           transform: scale(1.2) translateX(30);
+           box-shadow: -5px 5px 10px skyblue;
+        }
+    }
+    .Contact-Content-right{
+        width: 100%;
+        .Contact-Info{
+            display: none;
+            width: 0%;
+            height: 0%;
+            transition: all 1s ease;
+            border: 2px solid green;
+        }
+        .Contact-Info.active{
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            animation: ShowInfo 2s ease forwards;
+            overflow: hidden;
+            justify-content: center;
+            .Contact-info-card{
+                transition: all 1s ease;
+                height: fit-content;
+            }
+            .Contact-info-card:hover{
+                transform: translateX(-10px) translateY(-15px);
+            }
+            .Contact-Info-name{
+                width: 250px;
+                height: 50px;
+                color: white;
+                border: 2px solid white;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                border-radius: 0px 0px 20px 20px;
+                transition: all 1s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .Contact-Info-img{
+                border: 2px solid white;
+                width: 250px;
+                height: 250px;
+                border-radius: 20px 20px 0px 0px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+.Contact-Text{
+    position: absolute;
+    top: 0;
+    left: -18.3%;
+    font-weight: bolder;
+    font-size: 160px;
+    transition: all 1s ease;
+    transform: rotate(90deg) translateX(300px);
+    text-shadow: 10px 0px 3px rgb(6, 192, 0);
+    color: white;
+}
+.Contact-Text:hover{
+    cursor: default;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.fw-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    .fw-profile{
+        background-color: white;
+        width: 40vh;
+        height: 93vh;
+        border-radius: 20px;
+        padding: 15px;
+        cursor: default;
+        .fw-profile-img{
+            border-radius: 100%;
+            margin: auto;
+        }
+        .fw-profile-name{
+            .fw-profile-verify{
+                text-align: center;
+                margin: auto;
+                width: 60%;
+                font-weight: bold;
+                border-radius: 20px;
+                background: rgb(1, 211, 152);
+                padding: 0 5px;
+            }
+        }
+        .fw-profile-info{
+            border: 1px solid rgb(232, 232, 232);
+            width: 90%;
+            height: 150px;
+            margin: 30px auto;
+            color: gray;
+            font-style: italic;
+            padding: 10px;
+        }
+        .fw-gray-line{
+            width: 108%;
+            margin-left: -4%;
+            border-radius: 20px;
+            border: 1px solid rgb(207, 207, 207);
+        }
+        .fw-profile-info2{
+            border: 1px solid rgb(232, 232, 232);
+            width: 90%;
+            height: 150px;
+            margin: 30px auto;
+            color: gray;
+            padding: 10px;
+        }
+    }
+
+    .fw-rightbox{
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .fw-Recent{
+        width: 100%;
+        height: 350px;
+        border: 2px solid gray;
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+        .fw-recent-list-item{
+            width: 100%;
+            height: 40px;
+            border-bottom: 2px solid gray;
+            background-color: rgb(206, 204, 204);
+            text-align: center;
+            color: black;
+            transition: all 1s ease;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .fw-recent-list-item:hover{
+           background-color: skyblue;
+           cursor: default;
+        }
+    }
+    .fw-finish{
+        width: 100%;
+        height: 350px;
+        border: 2px solid gray;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        .fw-finish-list-item{
+            width: 100%;
+            height: 40px;
+            border-bottom: 2px solid gray;
+            background-color: rgb(206, 204, 204);
+            text-align: center;
+            color: black;
+            transition: all 1s ease;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .fw-finish-list-item:hover{
+            background-color: skyblue;
+            cursor: default;
+         }
+    }
+}
+.email-sender-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .email-sender-Subject{
+        position: relative;
+        .email-sender-input{
+            width: 80%;
+            background-color: transparent;
+            border: 2px solid green;
+            border-radius: 20px;
+            padding: 16px;
+            color: lime;
+            font-weight: bold;
+            font-size: 24px;
+            z-index: 2;
+            outline: none;
+        }
+        .email-sender-input-text{
+            position: absolute;
+            top: 16%;
+            left: 15%;
+            color: gray;
+            z-index: 1;
+            transition: all 0.5s ease;
+            font-size: 30px;
+        }
+        .email-sender-input:focus,
+        .email-sender-input:valid{
+            color: rgb(0, 255, 0);
+            border: 4px solid rgb(0, 255, 0);
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+        .email-sender-input:focus + .email-sender-input-text,
+        .email-sender-input:valid + .email-sender-input-text{
+            color: rgb(0, 255, 0);
+            height: 30px;
+            line-height: 20px;
+            background: #191919;
+            padding: 0 10px;
+            transform: translate(-14px,-25px);
+            font-weight: bold;
+            z-index: 3;
+            font-family: monospace;
+        }
+        .email-sender-input:read-only + .email-sender-input-text{
+            color: rgb(0, 255, 0);
+            height: 30px;
+            line-height: 20px;
+            background: #191919;
+            padding: 0 10px;
+            transform: translate(-14px,-25px);
+            font-weight: bold;
+            z-index: 3;
+            font-family: monospace;
+        }
+    }
+    .email-sender-detailinput{
+        width: 80%;
+        height: 300px;
+        border-radius: 20px;
+        background: transparent;
+        resize: none;
+        border: 2px solid green;
+        outline: none;
+        padding: 15px;
+        transition: all 100ms ease;
+        font-family: monospace;
+        font-size: 24px;
+    }
+    .email-sender-detailinput:focus,
+    .email-sender-detailinput:valid{
+        border: 4px solid rgb(0, 255, 0);
+        
+    }
+    .email-submit-btn{
+        border: 2px solid green;
+        width: 500px;
+        height: 70px;
+        transition: all 1s ease;
+        font-weight: bold;
+        font-family: mono;
+        font-size: 40px;
+        box-sizing: border-box;
+        box-shadow: 0px 15px 0px 0px green;
+        color: black;
+        letter-spacing: 10px;
+        background: rgba(107, 255, 2, 0.964);
+        transform: rotateX(40deg);
+    }
+    .email-submit-btn:hover{
+        border-radius: 20px;
+        transform: rotateX(0deg);
+        box-shadow: 0px 0px 1px 1px green;
+        background: rgb(0, 47, 0);
+        color: white;
+    }
+}
+
+.please-login-text{
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 35%;
+}
+.Email-Login-BTN{
+    width: 40vh;
+    height: 70px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 10px;
+    transition: all 1s ease;
+    text-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+.bgEmail-Login-BTN{
+    width: 100%;
+    height: 100%;
+    background: rgb(194,169,250);
+    background: linear-gradient(90deg,
+    rgba(194,169,250,1) 0%,
+    rgba(61,0,0,1) 100%
+    );
+    position: relative;
+
+}
+.bgEmail-Login-BTN.active{
+    background: rgb(194,169,250);
+    background: linear-gradient(-90deg,
+     rgba(194,169,250,1) 0%,
+     rgba(61,0,0,1) 100%
+    );
+}
+.Email-Login-BTNtext{
+    position: absolute;
+    top: 0;
+    left: 20;
+    transition: all 1s ease;
+}
+.Email-Login-BTNtext.active{
+    transform: translateX(180px);
+}
+@keyframes ShowInfo {
+    0%{
+        width: 0%;
+        height: 0%;
+        padding: 0px;
+    }50%{
+        width: 100%;
+        height: 0%;
+        padding: 0px;
+    }90%{
+        width: 100%;
+        height: 100%;
+        background: #ffffff00;
+        border: 2px solid green;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        background: #ffffff19;
+        border: 2px solid black;
+    }
+}
+@keyframes MoveRight{
+    0%{
+        transform: translateX(0px);
+    }100%{
+        transform: translateX(200px);
+    }
+}
+@keyframes ReMoveRight{
+    0%{
+        transform: translateX(200px);
+    }100%{
+        transform: translateX(0px);
+    }
+}
+

@@ -1,0 +1,127 @@
+.Introduce-Container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.Introduce-BG{
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/Introduce/IntroduceBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    position: absolute;
+    z-index: -1;
+}
+.Introduce-Content{
+    display: flex;
+
+}
+.Introduce-Content-left{
+    width: 100%;
+    height: 92vh;
+    text-align: center;
+    padding-top: 100px;
+
+    .Intro-Left-Text1{
+        font-weight: bolder;
+        font-size: 100px;
+        margin-left: 2%;
+        color: gray;
+        text-shadow: 0px -5px white;
+    }
+    
+    .Intro-Left-Text2{
+        margin-left: 10%;
+        font-size: 2em;
+        font-weight: bold;
+        color: gray;
+        text-shadow: 5px 0px white;
+    }
+    #TextType{
+        text-align: start;
+        width: 35%;
+       color: rgb(3, 222, 3);
+        text-shadow: 5px 0px rgb(0, 0, 0); 
+    }
+    .Intro-Left-Text3{
+        width: 75%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.364);
+        border-radius: 10px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .Intro-Btn-icon{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .Intro-Scroll-Down{
+        transition: all;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        color: gray;
+        transition: all 1s ease;
+        font-size: 24px;
+    }
+    .Intro-Scroll-Down:hover{
+        color: white;
+    }
+}
+.Introduce-Content-right{   
+    height: 92vh;
+}
+
+.modal-container{
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.401);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    animation: Showdown 1s ease forwards;
+    .modal-overlay{
+        width: 100%;
+        height: 100%;
+        .modal-contect{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px;
+            color: black;
+            .Close-modal-btn{
+                position: absolute;
+                right: 40;
+                color: red;
+                font-weight: bold;
+                font-size: 40px;
+                font-family: monospace;
+                position: absolute;
+                transition: all 1s ease;
+            }
+            .Close-modal-btn:hover{
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+    
+}
+
+@keyframes Showdown {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 80vh;
+    }
+}
+
+

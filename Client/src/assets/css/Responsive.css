@@ -1,0 +1,430 @@
+
+@media (max-width: 479px) {
+    
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Navbar */
+    nav#nav{
+        width: 767px;
+    }
+    div.nav-center{
+        font-size: 20px;
+    }
+    /* Intro */
+    div.Introduce-Container{
+        width: 767px;
+        height: 100vh;
+    }
+    div.Introduce-Content-left{
+        div{
+            p.Intro-Left-Text1{
+                font-size: 40px;
+                margin-left: -50px;
+                text-shadow: 0px 3px 1px white;
+            }
+            p.Intro-Left-Text2{
+                font-size: 50px;
+                margin-left: -5%;
+            }
+            p.Intro-Left-Text3{
+                font-size: 20px;
+            }
+            div#TextType{
+                font-size: 20px;
+                width: 500px;
+            }
+            button{
+                font-size: 20px;
+            }
+        }
+    }
+    
+    /* Aboutme */
+    div.Aboutme-Container{
+        width: 767px;
+    }
+    div.Aboutme-Content{
+        display: flex;
+        flex-direction: column;
+        div.Aboutme-Left{
+            width: 100%;
+            height: 40%;
+            overflow: hidden;
+            div.Profile{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                gap: 20px;
+                padding: 15px;
+            }
+            div.Profile-img-box{
+                width: 50%;
+                height: 70%;
+                border-radius: 20px;
+                img.Profile-img{
+                    object-fit: cover;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            div.Profile-text{
+                width: 100%;
+                height: 87%;
+                div{
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        div.Aboutme-Right{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            position: relative;
+            padding: 5px;
+            p.Aboutme-Right-Header{
+                position: absolute;
+                top: -50px;
+                left: 50%;
+            }
+            div.Stack-Table{
+                display: flex;
+                flex-grow: 0;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-left: 50px;
+                overflow: scroll;
+                width: 450px;
+                height: 150px;
+                padding: 0;
+                div.Stack-Card{
+                    width: 100px;
+                    height: 150px;
+                    padding: 0;
+                    div.stack-img{
+                        img{
+                            height: 100px;
+                            width: 100px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            div.Stack-Info{
+                div{
+                    div{
+                        p{
+                            width: 90px;
+                            font-size: 20px;
+                        }
+                    }
+                    div{
+                        div.PGB-Container{
+                            width: 75%;
+                            margin: auto;
+                        }
+                    }
+                    div{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    /* Projects */
+    div.Project-Container{
+        p.Project-Header-TopicText{
+            font-size: 100px;
+        }
+        div.Project-Contents{
+            width: auto;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            "A A"
+            "B B";
+            div.Projects-Cards{
+                width: 100%;
+                height: 100%;
+                transition: all 1s ease;
+                p.Projects-Card-name{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    /* Contacts */
+    div.Contact-Container{
+        overflow: hidden;
+        div.social{
+            height: 40vh;
+            overflow: hidden;
+        }
+        div.Contact-info-card{
+            width: 80%;
+            height: 350px;
+        }
+    }
+    p.Contact-Text{
+        left: -300px;
+    }
+    div.Contact-Content{
+        div.Contact-Content-left{
+            margin: auto;
+            button.Contact-Btn{
+                font-size: 20px;
+            }
+        }
+        div.social{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 150px;
+            div.Contact-info-card{
+                div.Contact-Info-img{
+                    img{
+                        width: 50px;
+                    }
+                }
+                div.Contact-Info-name{
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+}
+  
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Navbar */
+    nav{
+        div.nav-center{
+            font-size: 24px;
+        }
+    }
+    /* Aboutme */
+    div.Aboutme-Container{
+        overflow: hidden;
+        div.Aboutme-Content{
+            div.Aboutme-Left{
+                div.Profile{
+                    div.Profile-img-box{
+                        width: 350px;
+                        height: 350px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+                }
+            }
+            div.Aboutme-Right{
+                div.Aboutme-Contents-Skill{
+                    div.Aboutme-Type-btnbox{
+                        border: 2px solid white;
+                    }
+                    div.Stack-Table{
+                        overflow: auto;
+                        display: flex;
+                        width: 500px;
+                        height: 120px;
+                        margin-top: 150px;
+                    }
+                }
+            }
+        }
+    }
+    /* Projects */
+    p.Project-Header-TopicText{
+        font-size: 120px;
+    }
+    /* Contacts */
+    p.Contact-Text{
+        left: -300px;
+    }
+    div.Contact-Content-left{
+        margin: auto;
+    }
+    /* GotopBTN */
+    
+    button.gotopbtn{
+        border-radius: 20px;
+        right: -20px;
+        background-color: red;
+        transform: translateX(0px);
+        z-index: 999;
+    }
+}
+  
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Introduce */
+    div.Introduce-Container{
+        font-size: 20px;
+        width:100%;
+        p.Intro-Left-Text1{
+            font-size: 50px;
+        }
+        div#TextType{
+            font-size: 20px;
+            width: 700px;
+        }
+        p.Intro-Left-Text2{
+            width: 200px;
+            font-size: 50px;
+        }
+        p.Intro-Left-Text3{
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+        div.Introduce-Content-left{
+            button{
+                font-size: 20px;
+                width: 260px;
+                height: 50px;
+            }
+        }
+    }
+    /* Contacts */
+    div.Contact-Container{
+        p.Contact-Text{
+            font-size: 150px;
+            z-index: 1;
+        }
+        div.Contact-Content{
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            div.Contact-Content-left{
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                margin: auto;
+                margin-bottom:10px;
+                button.Contact-Btn{
+                    width: 500px;
+                    margin-left: 5%;
+                }
+            }
+            div.Contact-Content-right{
+                width: 80%;
+                height: 100%;
+                z-index: 3;
+                margin-left: 15%;
+                div.Contact-Info{
+                    padding: 0;
+                    border-radius: 20px;
+                    div.fw-container{
+                        padding: 0;
+                        div.fw-profile-box{
+                            div.fw-profile{
+                                height: 100%;
+                                overflow: hidden;
+                                div.fw-profile-name{
+                                    font-size: 10px;
+                                    p{
+                                        font-size: 15px;
+                                    };
+                                }
+                                img{
+                                    width: 100%px;
+                                    height: 100px;
+                                    border-radius: 20px;
+                                }
+                                div.fw-profile-info{
+                                    font-size: 13px;
+                                    height: 80px;
+                                }
+                            }
+                        }
+                        div.fw-rightbox{
+                            div.fw-Recent{
+                                height: 30vh;
+                            }
+                            div.fw-finish{
+                                height: 30vh;
+                            }
+                        }
+                    }
+                }
+            }
+            .email-sender-container{
+                div{
+                    textarea{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    /* GotopBTN */
+    
+    button.gotopbtn{
+        border-radius: 20px;
+        right: -20px;
+        background-color: red;
+        transform: translateX(0px);
+        z-index: 999;
+    }
+}
+
+@media (min-width: 1280px) {
+    div.Introduce-Container{
+        font-size: 20px;
+        width:100%;
+        p.Intro-Left-Text1{
+            font-size: 50px;
+        }
+        div#TextType{
+            width: 700px;
+        }
+        p.Intro-Left-Text3{
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+    }
+    div.Aboutme-Right{
+        height: 150px;
+        p.Aboutme-Right-Header{
+            font-size: 40px;
+        }
+        div.Stack-Table{
+            height: 250px;
+            width: 70%;
+            div.Stack-Card{
+                width: 100px;
+                height: 100px;
+                div.stack-img{
+                    height:100%;
+                    img{
+                        width: 100px;
+                        height: 80px;
+                        margin: auto;
+                    }
+                }
+                div.stack-name{
+                    font-size: 14px;
+                }
+            }
+        }
+        div.Aboutme-Type-btnbox{
+            height: 100%;
+            button.Aboutme-Type-Btn {
+                font-size: 20px;
+            }
+        }
+        div.Stack-Info{
+            div{
+                font-size: 20px;
+                div.PGB-Container{
+                    width: 95%;height: 30px;
+                }
+            }
+        }
+    }
+}
+  
