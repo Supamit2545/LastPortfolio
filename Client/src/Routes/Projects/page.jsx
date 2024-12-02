@@ -1,5 +1,5 @@
-'use client'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../../assets/css/Project.css'
 import ProjectsData from './ProjectsData.json'
 
@@ -42,7 +42,7 @@ const ProjectPage = () => {
                 <p className='Projects-Card-name'>{pj.name}</p>
                 <div className='Projects-Card-details'>
                   <p>{pj.details}</p>
-                  <button className='Project-Link-btn'>Live!</button>
+                  <Link to={pj.link}><button className='Project-Link-btn' >Live!</button></Link>
                 </div>
               </div>
             </div>

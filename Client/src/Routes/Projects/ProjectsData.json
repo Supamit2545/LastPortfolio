@@ -2,21 +2,25 @@
     {
         "name": "MyBlog",
         "image": "/Assets/Images/Projects/Blog.png",
-        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+        "details":"Blog website like pantip but back-end is expired from Heroku",
+        "link":"https://my-blogs-demo.vercel.app/"
     },
     {
         "name": "Myshop",
         "image": "/Assets/Images/Projects/MyShop.png",
-        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+        "details":"My fam website promote our family restourant and my girlfriend shop and demo pet shop ",
+        "link":""
     },
     {
         "name": "GameStrat",
         "image": "/Assets/Images/Projects/Games_strat.png",
-        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+        "details":"GameStrat I'm boring games it nomaly every day Need Challenge? Front-end Only Still work",
+        "link":"https://games-strat.vercel.app/"
     },
     {
         "name": "Systems Repair",
         "image": "/Assets/Images/Projects/Repair.png",
-        "details":"LorramsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaASDAD"
+        "details":"Final project but rework from html , php to react , node.js",
+        "link":""
     }
 ]
