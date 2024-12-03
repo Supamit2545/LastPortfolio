@@ -97,9 +97,10 @@
             border-radius: 20px;
             padding: 5px;
             color: black;
+            overflow: hidden;
             .Close-modal-btn{
                 position: absolute;
-                right: 40;
+                right: 40px;
                 color: red;
                 font-weight: bold;
                 font-size: 40px;
@@ -109,6 +110,124 @@
             }
             .Close-modal-btn:hover{
                 transform: rotateZ(360deg);
+            }
+        }
+        .ModalCon{
+            display: none;
+        }
+        .ModalCon.active{
+            display: block;
+        }
+        .Modal-Web-Content{
+            margin-top: 30px;
+            width: 100%;
+            height: 70vh;
+            padding: 3%;
+            .Modal-Web-Left{
+                width: 100%;
+                height: 100%;
+                .Modal-web-inp{
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    width: 300px;
+                    height: 50px;
+                    padding: 16px;
+                    font-weight: bold;
+                    font-family: monospace;
+                }
+                .Modal-web-Cate{
+                    border: 2px solid black;
+                    width: 300px;
+                    height: 70px;
+                    border-radius: 20px;
+                    font-weight: bold;
+                    font-family: monospace;
+                    text-align: center;
+                }
+                .Modal-web-textarea{
+                    resize: none;
+                    border-radius: 20px;
+                    border: 2px solid gray;
+                    width: 100%;
+                    height: 30vh;
+                    padding: 2%;
+                    outline: none;
+                }
+            }
+            .Modal-Web-Right{
+                width: 100%;
+                height: 65vh;
+                border: 2px solid cyan;
+                transition: all 1s ease;
+            }
+        }
+        .Modal-Hire-Content{
+            display: flex;
+            .Modal-Hire-Left{
+                width: 50%;
+                height: 75vh;
+                .ArrowBHI{
+                    display: none;
+                    color: green;
+                }
+                .ArrowBHI.active{
+                    display: block;
+                    transition: all 1s ease;
+                    transform: translateX(40px);
+                }
+                .Modal-Hire-inp{
+                    width: 80%;
+                    height: 50px;
+                    padding: 16px;
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    margin-left: 10%;
+                    outline: none;
+                }
+                .Modal-Hire-inp:focus{
+                    border: 2px solid rgb(0, 85, 0);
+                }
+                .Modal-Hire-textarea{
+                    width: 100%;
+                    height: 20vh;
+                    resize: none;
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    outline: none;
+                    padding: 16px;
+                }
+                .Modal-Hire-submitBTN{
+                    width: 100%;
+                    height: 60px;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    box-shadow: 0px 5px 1px 1px black;
+                    padding: 16px;
+                    margin-left: 5%;
+                    background-color: lime;
+                    font-weight: bold;
+                    font-size: 30px;
+                    text-align: center;
+                    align-items: center;
+                    transition: all 1s ease;
+                    transform: rotateX(25deg);
+                    color: black;
+                }
+                .Modal-Hire-submitBTN:hover{
+                    background-color: rgb(1, 59, 1);
+                    transform: rotateX(0deg);
+                    color: white;
+                }
+                .Modal-Hire-submitBTN:active{
+                    background-color: rgb(0, 0, 0);
+                    transform: rotateX(0deg);
+                    color: white;
+                }
+            }
+            .Modal-Hire-Right{
+                width: 100%;
+                height: 75vh;
             }
         }
     }
